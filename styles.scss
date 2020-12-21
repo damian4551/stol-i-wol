@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
 
 //fonts
 $mainFont: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-$titleFont: 'Phosphate', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+$titleFont: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 //colors
 $red: #902020;
@@ -35,6 +36,8 @@ $green: #1E2310;
 @mixin title {
     position: relative;
     font-family: $titleFont;
+    font-weight: bold;
+    text-transform: uppercase;
     font-size: 2em;
     letter-spacing: 1px;
     margin-bottom: 30px;
@@ -62,15 +65,15 @@ $green: #1E2310;
     background-color: #fff;
     top: 50%;
     transform: translateY(-50%);
-    left: -80%;
+    left: -70%;
     @media (min-width: 576px) {
-        left: -65%;
+        left: -58%;
     }
     @media (min-width: 768px) {
-        left: -72%;
+        left: -68%;
     }
     @media (min-width: 1200px) {
-        left: -62%;
+        left: -55%;
     }
 }
 
@@ -398,23 +401,20 @@ body {
             }
             &::before {
                 @include titleBefore;
-                left: -50%;
+                left: -46%;
                 @media (min-width: 576px) {
-                    left: -42%;
+                    left: -39%;
                 }
                 @media (min-width: 768px) {
-                    left: -50%;
+                    left: -44%;
                 }
                 @media (min-width: 1200px) {
-                    left: -45%;
+                    left: -40%;
                 }
             }
             &::after {
                 @include titleAfter;
                 left: 110%;
-                @media (min-width: 768px) {
-                    left: 113%;
-                }
             }
         }
     }
@@ -570,15 +570,15 @@ body {
                 }
                 &::before {
                     @include titleBefore;
-                    left: -65%;
+                    left: -60%;
                     @media (min-width: 576px) {
-                        left: -50%;
+                        left: -48%;
                     }
                     @media (min-width: 768px) {
-                        left: -57%;
+                        left: -54%;
                     }
                     @media (min-width: 1200px) {
-                        left: -49%;
+                        left: -45%;
                     }
                 }
                 &::after {
@@ -732,23 +732,20 @@ body {
                 @include title;
                 &::before {
                     @include titleBefore;
-                    left: -35%;
+                    left: -29%;
                     @media (min-width: 576px) {
-                        left: -27%;
+                        left: -25%;
                     }
                     @media (min-width: 768px) {
-                        left: -30%;
+                        left: -27%;
                     }
                     @media (min-width: 1200px) {
-                        left: -25%;
+                        left: -23%;
                     }
                 }
                 &::after {
                     @include titleAfter;
                     left: 107%;
-                    @media (min-width: 768px) {
-                        left: 105%;
-                    }
                 }
             }
         }
@@ -952,6 +949,8 @@ body {
             .text {
                 display: flex;
                 flex-direction: column;
+                text-decoration: none;
+                color: #fff;
             }
         }
     }
