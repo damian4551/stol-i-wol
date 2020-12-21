@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js" defer></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" defer></script>
+    <script type="text/javascript" src="app.js" defer></script>
+    <title>Stół i Wół</title>
+</head>
+<body>
+
+<div class="cursor">
+    <p class="cursor-text">pociągnij</p>
+</div>
+
+<div class="loading-bg">
+    <img src="images/logo.png" alt="logo"/>
+</div>
+
+<div class="front-section">
+    <div class="header">
+        <img src="images/logo.png" alt="logo"/>
+    </div>
+    <div class="front-container">
+        <div class="title-block">
+            <h1 class="front-title">stół i wół</h1>
+            <h3 class="front-sub-title">uwolnij się!</h3>
+        </div>
+        <div class="buttons-block">
+            <a href="#" class="btn cursor-btn"><span>zamów</span></a>
+            <a href="#" class="uber-btn cursor-btn"><img src="icons/uber-eats.svg" alt="ubereats" /></a>
+        </div>
+    </div>
+</div>
+
+<div class="about-section">
+    <div class="text-block">
+        <h3 class="title">o nas</h3>
+        <p class="text">
+            Zawsze szukamy nietypowych rozwiązań i 
+            połączeń, aby Was ciągle zaskakiwać. 
+            Dbamy o każdy detal, od obsługi poprzez 
+            sposób podania, a skończywszy na 
+            wystroju wnętrza.
+        </p>
+        <p class="text">
+            W naszej kuchni skupiamy się na 
+            najszlechetniejszym z mięs - wołowinie. 
+            Burgery i steki przygotowujemy na grillu 
+            Josper, opalanym węglem drzewnym. 
+            Dzięki temu mają niepowtarzalny smak. 
+            Idealnym ich uzupełnieniem są nasze 
+            lemoniady, radlery i koktajle.
+        </p>
+    </div>
+    <div class="img-block"></div>
+</div>
+
+<div class="gallery-section">
+    <div class="text-block">
+        <h3 class="title">galeria</h3>
+    </div>
+    <div class="swiper-container swiper-1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide-img"></div>
+            <div class="swiper-slide slide-img"></div>
+            <div class="swiper-slide slide-img"></div>
+            <div class="swiper-slide slide-img"></div>
+            <div class="swiper-slide slide-img"></div>
+            <div class="swiper-slide slide-img"></div>
+            <div class="swiper-slide slide-img"></div>
+            <div class="swiper-slide slide-img"></div>
+            <div class="swiper-slide slide-img"></div>
+            <div class="swiper-slide slide-img"></div>
+        </div>
+    </div>
+</div>
+
+<div class="text-section">
+    <div class="text-block">
+        <div class="line">
+            <span class="text-move">restauracja</span>
+        </div>
+        <div class="line">
+            <span class="text-move">w sercu</span>
+        </div>
+        <div class="line">
+            <span class="marked text-move">lubelskiego</span>
+        </div>
+        <div class="line">
+            <span class="text-move">starego miasta</span>
+        </div>
+    </div>
+</div>
+
+<div class="flex-testimonial">
+    <div class="img-block"></div>
+    <div class="testimonial-section">
+        <div class="text-block">
+            <h3 class="title">opinie</h3>
+            <div class="swiper-container swiper-2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p class="text">
+                            Bardzo klimatyczne miejsce, świetne na spędzenie wolnego wieczoru. Burgery dobre, sycące. Szybka realizacja zamówień.
+                        </p>
+                        <p class="author">Justyna R.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="text">
+                            Bardzo dobre burgery, super dostawa #ratujemygastro
+                        </p>
+                        <p class="author">Maciej W.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="text">
+                            Wspaniałe miejsce z super klimatem, jedzenie przepyszne a obsługa przemiła. Nic dodać nic ująć ❤️
+                        </p>
+                        <p class="author">Jan Z.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</div>
+
+<div class="flex-form">
+    <div class="img-block"></div>
+    <div class="flex-group">
+        <div class="text-block">
+            <h3 class="title">rezerwacja</h3>
+        </div>
+        <form>
+            <div class="flex-info">
+                <input type="email" placeholder="email" />
+                <input type="text" placeholder="imię i nazwisko" />
+            </div>
+            <div class="flex-date">
+                <input type="date" />
+                <input type="time" />
+            </div>
+            <button class="cursor-btn">wyślij</button>
+        </form>
+    </div>
+</div>
+
+<div class="footer-section">
+    <div class="restaurant-info">
+        <div class="row">
+            <img src="icons/pin.svg" alt="address"/>
+            <p class="text">
+                <span>ul. Bramowa 2-6</span>
+                <span>Lublin, Polska</span>
+                <span>Pon-Ndz 12-21</span>
+            </p>
+        </div>
+        <div class="row">
+            <img src="icons/phone-call.svg" alt="phone"/>
+            <p class="text">
+                +48 81 565 55 55
+            </p>
+        </div>
+        <div class="row">
+            <img src="icons/envelope.svg" alt="email"/>
+            <p class="text">
+                rezerwacje@stoliwol.pl
+            </p>
+        </div>
+    </div>
+    <div class="logo">
+        <img src="images/logo.png" alt="logo"/>
+    </div>
+    <div class="social">
+        <div class="row">
+            <img src="icons/facebook.svg" alt="facebook"/>
+            <p class="text cursor-btn">
+                <a href="https://www.facebook.com/stoliwol">/stoliwol</a>
+            </p>
+        </div>
+        <div class="row">
+            <img src="icons/instagram.svg" alt="instagram"/>
+            <p class="text cursor-btn">
+                <a href="https://www.instagram.com/stoliwol">/stoliwol</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
